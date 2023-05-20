@@ -1,26 +1,51 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <router-view/>
 </template>
 
-<script>
-import HelloWorld from './components/HelloWorld.vue'
+<style>
+@import url("assets/css/style.css");
+@import url("assets/vendor/fontawesome-free/css/all.min.css");
+@import url("assets/vendor/animate.css/animate.min.css");
+@import url("assets/vendor/bootstrap/css/bootstrap.min.css");
+@import url("assets/vendor/bootstrap-icons/bootstrap-icons.css");
+@import url("assets/vendor/boxicons/css/boxicons.min.css");
+@import url("assets/vendor/glightbox/css/glightbox.min.css");
+@import url("assets/vendor/remixicon/remixicon.css");
+@import url("assets/vendor/swiper/swiper-bundle.min.css");
+</style>
 
+<script>
+// import "@/assets/vendor/purecounter/purecounter_vanilla.js"
+// import "@/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"
+// import "@/assets/vendor/glightbox/js/glightbox.min.js"
+// import "@/assets/vendor/swiper/swiper-bundle.min.js"
+// import "@/assets/vendor/php-email-form/validate.js"
+// import "@/assets/js/main"
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
+  setup() {
+    const pureCounter = document.createElement("script");
+    pureCounter.setAttribute("src", "assets/vendor/purecounter/purecounter_vanilla.js");
+    document.head.appendChild(pureCounter);
+
+    const bootstrapBundle = document.createElement("script");
+    bootstrapBundle.setAttribute("src", "assets/vendor/bootstrap/js/bootstrap.bundle.min.js");
+    document.head.appendChild(bootstrapBundle);
+
+    const glightBox = document.createElement("script");
+    glightBox.setAttribute("src", "assets/vendor/glightbox/js/glightbox.min.js");
+    document.head.appendChild(glightBox);
+
+    const swiper = document.createElement("script");
+    swiper.setAttribute("src", "assets/vendor/swiper/swiper-bundle.min.js");
+    document.head.appendChild(swiper);
+
+    const validatePHP = document.createElement("script");
+    validatePHP.setAttribute("src", "assets/vendor/php-email-form/validate.js");
+    document.head.appendChild(validatePHP);
+
+    const mainJs = document.createElement('script');
+    mainJs.setAttribute("src", "assets/js/main");
+    document.head.appendChild(mainJs);
   }
 }
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
