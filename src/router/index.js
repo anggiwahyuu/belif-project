@@ -18,6 +18,15 @@ const routes = [
     meta: {
       title: "A Better Life With Belif | Tentang Kami"
     }
+  },
+
+  {
+    path: '/literasi',
+    name: 'literasi',
+    component: () => import("../views/LiterasiView.vue"),
+    meta: {
+      title: "A Better Life With Belif | Literasi"
+    }
   }
 ]
 

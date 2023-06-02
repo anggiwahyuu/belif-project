@@ -26,207 +26,207 @@
                   </div>
 
                   <div id="form-radio-1" class="disable">
-                    <p class="fs-3">2. Lorem Ipsum Dolor Sit Amet</p>
+                    <p class="fs-3">2. Hai, boleh tau gak diantara penyataan ini mana yang paling sesuai dengan kamu?</p>
                     <div class="form-check mb-2 p-2 rounded" id="form-check">
                       <input class="form-check-input mx-1" type="checkbox" name="flexRadioDefault" id="flexRadioDefault1">
                       <label class="form-check-label fs-5" for="flexRadioDefault1">
-                        Option 1
+                        Introvert
                       </label>
                     </div>
                     <div class="form-check mb-2 p-2 rounded" id="form-check">
                       <input class="form-check-input mx-1" type="checkbox" name="flexRadioDefault" id="flexRadioDefault2">
                       <label class="form-check-label fs-5" for="flexRadioDefault2">
-                        Option 2
+                        Ekstrovert
                       </label>
                     </div>
                     <div class="form-check mb-2 p-2 rounded" id="form-check">
                       <input class="form-check-input mx-1" type="checkbox" name="flexRadioDefault" id="flexRadioDefault2">
                       <label class="form-check-label fs-5" for="flexRadioDefault2">
-                        Option 3
+                        Emosional
                       </label>
                     </div>
                     <div class="more-btn mt-4" @click="nextForm2()" style="margin-top: 10px; cursor: pointer;">OK <i class="bx bx-chevron-right"></i></div>
                   </div>
 
                   <div id="form-radio-2" class="disable">
-                    <p class="fs-3">3. Lorem Ipsum Dolor Sit Amet</p>
+                    <p class="fs-3">3. Bagaimana perasaanmu saat ini?</p>
                     <div class="form-check mb-2 p-2 rounded" id="form-check">
                       <input class="form-check-input mx-1" type="checkbox" name="flexRadioDefault" id="flexRadioDefault1">
                       <label class="form-check-label fs-5" for="flexRadioDefault1">
-                        Option 4
+                        Senang/Gembira
                       </label>
                     </div>
                     <div class="form-check mb-2 p-2 rounded" id="form-check">
                       <input class="form-check-input mx-1" type="checkbox" name="flexRadioDefault" id="flexRadioDefault2">
                       <label class="form-check-label fs-5" for="flexRadioDefault2">
-                        Option 5
+                        Sedih/Khawatir
                       </label>
                     </div>
                     <div class="form-check mb-2 p-2 rounded" id="form-check">
                       <input class="form-check-input mx-1" type="checkbox" name="flexRadioDefault" id="flexRadioDefault2">
                       <label class="form-check-label fs-5" for="flexRadioDefault2">
-                        Option 6
+                        Kesepian
                       </label>
                     </div>
                     <div class="more-btn mt-4" @click="nextForm3()" style="margin-top: 10px; cursor: pointer;">OK <i class="bx bx-chevron-right"></i></div>
                   </div>
 
                   <div id="form-radio-3" class="disable">
-                    <p class="fs-3">4. Lorem Ipsum Dolor Sit Amet</p>
+                    <p class="fs-3">4. Apa kamu bisa mengendalikan emosimu?</p>
                     <div class="form-check mb-2 p-2 rounded" id="form-check">
                       <input class="form-check-input mx-1" type="checkbox" name="flexRadioDefault" id="flexRadioDefault1">
                       <label class="form-check-label fs-5" for="flexRadioDefault1">
-                        Option 7
+                        Tergantung situasi
                       </label>
                     </div>
                     <div class="form-check mb-2 p-2 rounded" id="form-check">
                       <input class="form-check-input mx-1" type="checkbox" name="flexRadioDefault" id="flexRadioDefault2">
                       <label class="form-check-label fs-5" for="flexRadioDefault2">
-                        Option 8
+                        Tentu saja bisa
                       </label>
                     </div>
                     <div class="form-check mb-2 p-2 rounded" id="form-check">
                       <input class="form-check-input mx-1" type="checkbox" name="flexRadioDefault" id="flexRadioDefault2">
                       <label class="form-check-label fs-5" for="flexRadioDefault2">
-                        Option 9
+                        Tidak bisa
                       </label>
                     </div>
                     <div class="more-btn mt-4" @click="nextForm4()" style="margin-top: 10px; cursor: pointer;">OK <i class="bx bx-chevron-right"></i></div>
                   </div>
 
                   <div id="form-radio-4" class="disable">
-                    <p class="fs-3">5. Lorem Ipsum Dolor Sit Amet</p>
+                    <p class="fs-3">5. Apasih yang membuatmu kesulitan dalam mengatasi masalah?</p>
                     <div class="form-check mb-2 p-2 rounded" id="form-check">
                       <input class="form-check-input mx-1" type="checkbox" name="flexRadioDefault" id="flexRadioDefault1">
                       <label class="form-check-label fs-5" for="flexRadioDefault1">
-                        Option 10
+                        Saya sudah mencoba menyelesaikan masalah sendiri tapi tidak berhasil
                       </label>
                     </div>
                     <div class="form-check mb-2 p-2 rounded" id="form-check">
                       <input class="form-check-input mx-1" type="checkbox" name="flexRadioDefault" id="flexRadioDefault2">
                       <label class="form-check-label fs-5" for="flexRadioDefault2">
-                        Option 11
+                        Saya malu bercerita dengan orang lain/psikolog
                       </label>
                     </div>
                     <div class="form-check mb-2 p-2 rounded" id="form-check">
                       <input class="form-check-input mx-1" type="checkbox" name="flexRadioDefault" id="flexRadioDefault2">
                       <label class="form-check-label fs-5" for="flexRadioDefault2">
-                        Option 12
+                        Saya tidak memiliki biaya untuk konseling
                       </label>
                     </div>
                     <div class="more-btn mt-4" @click="nextForm5()" style="margin-top: 10px; cursor: pointer;">OK <i class="bx bx-chevron-right"></i></div>
                   </div>
 
                   <div id="form-radio-5" class="disable">
-                    <p class="fs-3">6. Lorem Ipsum Dolor Sit Amet</p>
+                    <p class="fs-3">6. Dalam 2 minggu terakhir, seberapa sering kamu merasa khawatir atau putus asa?</p>
                     <div class="form-check mb-2 p-2 rounded" id="form-check">
                       <input class="form-check-input mx-1" type="checkbox" name="flexRadioDefault" id="flexRadioDefault1">
                       <label class="form-check-label fs-5" for="flexRadioDefault1">
-                        Option 13
+                        Tidak pernah
                       </label>
                     </div>
                     <div class="form-check mb-2 p-2 rounded" id="form-check">
                       <input class="form-check-input mx-1" type="checkbox" name="flexRadioDefault" id="flexRadioDefault2">
                       <label class="form-check-label fs-5" for="flexRadioDefault2">
-                        Option 14
+                        Hampir setiap hari
                       </label>
                     </div>
                     <div class="form-check mb-2 p-2 rounded" id="form-check">
                       <input class="form-check-input mx-1" type="checkbox" name="flexRadioDefault" id="flexRadioDefault2">
                       <label class="form-check-label fs-5" for="flexRadioDefault2">
-                        Option 15
+                        Beberapa hari
                       </label>
                     </div>
                     <div class="more-btn mt-4" @click="nextForm6()" style="margin-top: 10px; cursor: pointer;">OK <i class="bx bx-chevron-right"></i></div>
                   </div>
 
                   <div id="form-radio-6" class="disable">
-                    <p class="fs-3">7. Lorem Ipsum Dolor Sit Amet</p>
+                    <p class="fs-3">7. Dalam satu bulan terakhir, apakah kamu merasa tidak bahagia dan tertekan?</p>
                     <div class="form-check mb-2 p-2 rounded" id="form-check">
                       <input class="form-check-input mx-1" type="checkbox" name="flexRadioDefault" id="flexRadioDefault1">
                       <label class="form-check-label fs-5" for="flexRadioDefault1">
-                        Option 16
+                        Tidak pernah
                       </label>
                     </div>
                     <div class="form-check mb-2 p-2 rounded" id="form-check">
                       <input class="form-check-input mx-1" type="checkbox" name="flexRadioDefault" id="flexRadioDefault2">
                       <label class="form-check-label fs-5" for="flexRadioDefault2">
-                        Option 17
+                        Hampir setiap hari
                       </label>
                     </div>
                     <div class="form-check mb-2 p-2 rounded" id="form-check">
                       <input class="form-check-input mx-1" type="checkbox" name="flexRadioDefault" id="flexRadioDefault2">
                       <label class="form-check-label fs-5" for="flexRadioDefault2">
-                        Option 18
+                        Beberapa hari
                       </label>
                     </div>
                     <div class="more-btn mt-4" @click="nextForm7()" style="margin-top: 10px; cursor: pointer;">OK <i class="bx bx-chevron-right"></i></div>
                   </div>
 
                   <div id="form-radio-7" class="disable">
-                    <p class="fs-3">8. Lorem Ipsum Dolor Sit Amet</p>
+                    <p class="fs-3">8. Dalam 2 minggu terakhir, seberapa sering kamu sulit berkonsentrasi pada sesuatu?</p>
                     <div class="form-check mb-2 p-2 rounded" id="form-check">
                       <input class="form-check-input mx-1" type="checkbox" name="flexRadioDefault" id="flexRadioDefault1">
                       <label class="form-check-label fs-5" for="flexRadioDefault1">
-                        Option 19
+                        Tidak pernah
                       </label>
                     </div>
                     <div class="form-check mb-2 p-2 rounded" id="form-check">
                       <input class="form-check-input mx-1" type="checkbox" name="flexRadioDefault" id="flexRadioDefault2">
                       <label class="form-check-label fs-5" for="flexRadioDefault2">
-                        Option 20
+                        Hampir setiap hari
                       </label>
                     </div>
                     <div class="form-check mb-2 p-2 rounded" id="form-check">
                       <input class="form-check-input mx-1" type="checkbox" name="flexRadioDefault" id="flexRadioDefault2">
                       <label class="form-check-label fs-5" for="flexRadioDefault2">
-                        Option 21
+                        Beberapa kali
                       </label>
                     </div>
                     <div class="more-btn mt-4" @click="nextForm8()" style="margin-top: 10px; cursor: pointer;">OK <i class="bx bx-chevron-right"></i></div>
                   </div>
 
                   <div id="form-radio-8" class="disable">
-                    <p class="fs-3">9. Lorem Ipsum Dolor Sit Amet</p>
+                    <p class="fs-3">9. Dalam 2 minggu terakhir, seberapa sering kamu kurang nafsu makan / terlalu banyak makan?</p>
                     <div class="form-check mb-2 p-2 rounded" id="form-check">
                       <input class="form-check-input mx-1" type="checkbox" name="flexRadioDefault" id="flexRadioDefault1">
                       <label class="form-check-label fs-5" for="flexRadioDefault1">
-                        Option 22
+                        Tidak pernah
                       </label>
                     </div>
                     <div class="form-check mb-2 p-2 rounded" id="form-check">
                       <input class="form-check-input mx-1" type="checkbox" name="flexRadioDefault" id="flexRadioDefault2">
                       <label class="form-check-label fs-5" for="flexRadioDefault2">
-                        Option 23
+                        Hampir setiap hari
                       </label>
                     </div>
                     <div class="form-check mb-2 p-2 rounded" id="form-check">
                       <input class="form-check-input mx-1" type="checkbox" name="flexRadioDefault" id="flexRadioDefault2">
                       <label class="form-check-label fs-5" for="flexRadioDefault2">
-                        Option 24
+                        Beberapa hari
                       </label>
                     </div>
                     <div class="more-btn mt-4" @click="nextForm9()" style="margin-top: 10px; cursor: pointer;">OK <i class="bx bx-chevron-right"></i></div>
                   </div>
 
                   <div id="form-radio-9" class="disable">
-                    <p class="fs-3">10. Lorem Ipsum Dolor Sit Amet</p>
+                    <p class="fs-3">10. Mana yang menjadi keinginanmu?</p>
                     <div class="form-check mb-2 p-2 rounded" id="form-check">
                       <input class="form-check-input mx-1" type="checkbox" name="flexRadioDefault" id="flexRadioDefault1">
                       <label class="form-check-label fs-5" for="flexRadioDefault1">
-                        Option 25
+                        Hidup bahagia
                       </label>
                     </div>
                     <div class="form-check mb-2 p-2 rounded" id="form-check">
                       <input class="form-check-input mx-1" type="checkbox" name="flexRadioDefault" id="flexRadioDefault2">
                       <label class="form-check-label fs-5" for="flexRadioDefault2">
-                        Option 26
+                        Bisa berhenti khawatir/overthinking
                       </label>
                     </div>
                     <div class="form-check mb-2 p-2 rounded" id="form-check">
                       <input class="form-check-input mx-1" type="checkbox" name="flexRadioDefault" id="flexRadioDefault2">
                       <label class="form-check-label fs-5" for="flexRadioDefault2">
-                        Option 27
+                        Jauh dari masalah
                       </label>
                     </div>
                     <button class="more-btn mt-4" style="margin-top: 10px;">OK <i class="bx bx-chevron-right"></i></button>

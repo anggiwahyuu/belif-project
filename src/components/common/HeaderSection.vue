@@ -9,7 +9,7 @@
                 <li><router-link class="nav-link scrollto" to="/" style="text-decoration: none;">Beranda</router-link></li>
                 <li><router-link class="nav-link scrollto" to="/tentangkami" style="text-decoration: none;">Tentang Kami</router-link></li>
                 <li><router-link class="nav-link scrollto" to="/a" style="text-decoration: none;">Layanan</router-link></li>
-                <li><router-link class="nav-link scrollto" to="/b" style="text-decoration: none;">Literasi</router-link></li>
+                <li><router-link class="nav-link scrollto" to="/literasi" style="text-decoration: none;">Literasi</router-link></li>
                 <li><router-link class="nav-link scrollto" to="/c" style="text-decoration: none;">Tim Psikolog</router-link></li>
             </ul>
         </nav>

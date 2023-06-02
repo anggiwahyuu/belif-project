@@ -11,7 +11,7 @@
 
           <div class="col-lg-6">
             <div class="member d-flex align-items-start">
-              <div class="pic"><img src="../../assets/img/konselor/konselor2.jpg" class="img-fluid" alt=""></div>
+              <div class="pic"><img src="../../assets/img/konselor/konselor2.jpg" class="img-fluid" alt="" loading="lazy"></div>
               <div class="member-info">
                 <h4>Walter White</h4>
                 <span>Chief Medical Officer</span>
@@ -32,7 +32,7 @@
 
           <div class="col-lg-6 mt-4 mt-lg-0">
             <div class="member d-flex align-items-start">
-              <div class="pic"><img src="../../assets/img/konselor/konselor1.jpg" class="img-fluid" alt=""></div>
+              <div class="pic"><img src="../../assets/img/konselor/konselor1.jpg" class="img-fluid" alt="" loading="lazy"></div>
               <div class="member-info">
                 <h4>Sarah Jhonson</h4>
                 <span>Anesthesiologist</span>
@@ -53,7 +53,7 @@
 
           <div class="col-lg-6 mt-4">
             <div class="member d-flex align-items-start">
-              <div class="pic"><img src="../../assets/img/konselor/konselor3.jpg" class="img-fluid" alt=""></div>
+              <div class="pic"><img src="../../assets/img/konselor/konselor3.jpg" class="img-fluid" alt="" loading="lazy"></div>
               <div class="member-info">
                 <h4>William Anderson</h4>
                 <span>Cardiology</span>
@@ -74,7 +74,7 @@
 
           <div class="col-lg-6 mt-4">
             <div class="member d-flex align-items-start">
-              <div class="pic"><img src="../../assets/img/konselor/konselor4.jpg" class="img-fluid" alt=""></div>
+              <div class="pic"><img src="../../assets/img/konselor/konselor4.jpg" class="img-fluid" alt="" loading="lazy"></div>
               <div class="member-info">
                 <h4>Amanda Jepson</h4>
                 <span>Neurosurgeon</span>

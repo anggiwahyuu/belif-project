@@ -3,7 +3,7 @@
         <div class="container">
             <h1>Temukan Keseimbangan dan Keharmonisan Dalam Hidup Anda Dengan Belif</h1>
             <h2>A Better Life With Belif</h2>
-            <a href="#appointment" class="btn-get-started scrollto" style="text-decoration: none;">Buat Janji Dengan Psikolog</a>
+            <a href="#appointment" class="btn-get-started scrollto" style="text-decoration: none;">Jadwalkan Konsultasi</a>
         </div>
     </section>
 </template>

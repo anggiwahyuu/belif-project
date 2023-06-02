@@ -6,7 +6,7 @@
                 <h2>Belif menghubungkan setiap orang yang ingin menemukan jalan keluar masalahnya dengan psikolog profesional</h2>
             </div>
             <div class="right-hero">
-                <img src="../../assets/img/hero-tentangkami.png" alt="Image Hero">
+                <img src="../../assets/img/hero-tentangkami.png" alt="Image Hero" loading="lazy">
             </div>
         </div>
     </section>
