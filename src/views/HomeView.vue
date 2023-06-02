@@ -12,6 +12,7 @@
     <appointment-section/>
     <rekomendasi-section/>
     <psikolog-section/>
+    <testimoni-section/>
     <f-a-q-section/>
   </main>
 
@@ -25,16 +26,17 @@
 
 <script>
 // @ is an alias to /src
-import HeaderSection from "@/components/HeaderSection.vue"
-import HeroSection from "@/components/HeroSection.vue"
-import WhyUsSection from "@/components/WhyUsSection.vue"
-import AboutSection from "@/components/AboutSection.vue"
-import ServicesSection from "@/components/ServicesSection.vue"
-import AppointmentSection from "@/components/AppointmentSection.vue"
-import RekomendasiSection from "@/components/RekomendasiSection.vue"
-import PsikologSection from "@/components/PsikologSection.vue"
-import FAQSection from "@/components/FAQSection.vue"
-import FooterSection from "@/components/FooterSection.vue"
+import HeaderSection from "@/components/common/HeaderSection.vue"
+import HeroSection from "@/components/homepage/HeroSection.vue"
+import WhyUsSection from "@/components/homepage/WhyUsSection.vue"
+import AboutSection from "@/components/homepage/AboutSection.vue"
+import ServicesSection from "@/components/homepage/ServicesSection.vue"
+import AppointmentSection from "@/components/homepage/AppointmentSection.vue"
+import RekomendasiSection from "@/components/homepage/RekomendasiSection.vue"
+import PsikologSection from "@/components/homepage/PsikologSection.vue"
+import TestimoniSection from "@/components/homepage/TestimoniSection.vue"
+import FAQSection from "@/components/homepage/FAQSection.vue"
+import FooterSection from "@/components/common/FooterSection.vue"
 
 export default {
   name: 'HomeView',
@@ -47,6 +49,7 @@ export default {
     AppointmentSection, 
     RekomendasiSection,
     PsikologSection,
+    TestimoniSection,
     FAQSection, 
     FooterSection
   }

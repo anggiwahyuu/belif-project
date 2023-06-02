@@ -5,8 +5,20 @@ const routes = [
   {
     path: '/',
     name: 'home',
-    component: HomeView
+    component: HomeView,
+    meta: {
+      title: "A Better Life With Belif"
+    }
   },
+
+  {
+    path: '/tentangkami',
+    name: 'tentangkami',
+    component: () => import("../views/TentangKamiView.vue"),
+    meta: {
+      title: "A Better Life With Belif | Tentang Kami"
+    }
+  }
 ]
 
 const router = createRouter({
