@@ -3,12 +3,10 @@
         <header-section/>
     </header>
 
-    <hero-section/>
-
     <main id="main">
-        <member-section/>
-        <visi-misi-section/>
+        <tim-psikolog-section/>
         <card-section/>
+        <konsultasi-section/>
     </main>
 
     <footer id="footer">
@@ -18,20 +16,18 @@
 
 <script>
 import HeaderSection from "@/components/common/HeaderSection.vue"
-import HeroSection from "@/components/tentangkamipage/HeroSection.vue"
-import MemberSection from "@/components/tentangkamipage/MemberSection.vue"
-import VisiMisiSection from "@/components/tentangkamipage/VisiMisiSection.vue"
-import CardSection from "@/components/tentangkamipage/CardSection.vue"
+import TimPsikologSection from "@/components/psikolog/TimPsikologSection.vue"
+import CardSection from "@/components/psikolog/CardSection.vue"
+import KonsultasiSection from "@/components/psikolog/KonsultasiSection.vue"
 import FooterSection from "@/components/common/FooterSection.vue"
 
 export default {
-    name: "TentangKamiView",
+    name: "TimPsikologView",
     components: {
         HeaderSection,
-        HeroSection,
-        MemberSection,
-        VisiMisiSection,
+        TimPsikologSection,
         CardSection,
+        KonsultasiSection,
         FooterSection
     }
 }

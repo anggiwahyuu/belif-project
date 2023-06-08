@@ -21,26 +21,26 @@
                 <form>
                   <div id="form-nama" :style="{ display: next? 'block' : 'none'}">
                     <p class="fs-3">1. Nama</p>
-                    <input type="text" name="form-name" id="form-name" placeholder="Ketik Nama Kamu Disini"> 
+                    <input type="text" name="form-name" id="form-name" placeholder="Ketik Nama Kamu Disini" v-model="nama"> 
                     <div class="more-btn mt-4" @click="nextForm1()" style="margin-top: 10px; cursor: pointer;">OK <i class="bx bx-chevron-right"></i></div>
                   </div>
 
                   <div id="form-radio-1" class="disable">
                     <p class="fs-3">2. Hai, boleh tau gak diantara penyataan ini mana yang paling sesuai dengan kamu?</p>
                     <div class="form-check mb-2 p-2 rounded" id="form-check">
-                      <input class="form-check-input mx-1" type="checkbox" name="flexRadioDefault" id="flexRadioDefault1">
+                      <input class="form-check-input mx-1" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
                       <label class="form-check-label fs-5" for="flexRadioDefault1">
                         Introvert
                       </label>
                     </div>
                     <div class="form-check mb-2 p-2 rounded" id="form-check">
-                      <input class="form-check-input mx-1" type="checkbox" name="flexRadioDefault" id="flexRadioDefault2">
+                      <input class="form-check-input mx-1" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
                       <label class="form-check-label fs-5" for="flexRadioDefault2">
                         Ekstrovert
                       </label>
                     </div>
                     <div class="form-check mb-2 p-2 rounded" id="form-check">
-                      <input class="form-check-input mx-1" type="checkbox" name="flexRadioDefault" id="flexRadioDefault2">
+                      <input class="form-check-input mx-1" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
                       <label class="form-check-label fs-5" for="flexRadioDefault2">
                         Emosional
                       </label>
@@ -51,19 +51,19 @@
                   <div id="form-radio-2" class="disable">
                     <p class="fs-3">3. Bagaimana perasaanmu saat ini?</p>
                     <div class="form-check mb-2 p-2 rounded" id="form-check">
-                      <input class="form-check-input mx-1" type="checkbox" name="flexRadioDefault" id="flexRadioDefault1">
+                      <input class="form-check-input mx-1" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
                       <label class="form-check-label fs-5" for="flexRadioDefault1">
                         Senang/Gembira
                       </label>
                     </div>
                     <div class="form-check mb-2 p-2 rounded" id="form-check">
-                      <input class="form-check-input mx-1" type="checkbox" name="flexRadioDefault" id="flexRadioDefault2">
+                      <input class="form-check-input mx-1" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
                       <label class="form-check-label fs-5" for="flexRadioDefault2">
                         Sedih/Khawatir
                       </label>
                     </div>
                     <div class="form-check mb-2 p-2 rounded" id="form-check">
-                      <input class="form-check-input mx-1" type="checkbox" name="flexRadioDefault" id="flexRadioDefault2">
+                      <input class="form-check-input mx-1" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
                       <label class="form-check-label fs-5" for="flexRadioDefault2">
                         Kesepian
                       </label>
@@ -74,19 +74,19 @@
                   <div id="form-radio-3" class="disable">
                     <p class="fs-3">4. Apa kamu bisa mengendalikan emosimu?</p>
                     <div class="form-check mb-2 p-2 rounded" id="form-check">
-                      <input class="form-check-input mx-1" type="checkbox" name="flexRadioDefault" id="flexRadioDefault1">
+                      <input class="form-check-input mx-1" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
                       <label class="form-check-label fs-5" for="flexRadioDefault1">
                         Tergantung situasi
                       </label>
                     </div>
                     <div class="form-check mb-2 p-2 rounded" id="form-check">
-                      <input class="form-check-input mx-1" type="checkbox" name="flexRadioDefault" id="flexRadioDefault2">
+                      <input class="form-check-input mx-1" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
                       <label class="form-check-label fs-5" for="flexRadioDefault2">
                         Tentu saja bisa
                       </label>
                     </div>
                     <div class="form-check mb-2 p-2 rounded" id="form-check">
-                      <input class="form-check-input mx-1" type="checkbox" name="flexRadioDefault" id="flexRadioDefault2">
+                      <input class="form-check-input mx-1" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
                       <label class="form-check-label fs-5" for="flexRadioDefault2">
                         Tidak bisa
                       </label>
@@ -97,19 +97,19 @@
                   <div id="form-radio-4" class="disable">
                     <p class="fs-3">5. Apasih yang membuatmu kesulitan dalam mengatasi masalah?</p>
                     <div class="form-check mb-2 p-2 rounded" id="form-check">
-                      <input class="form-check-input mx-1" type="checkbox" name="flexRadioDefault" id="flexRadioDefault1">
+                      <input class="form-check-input mx-1" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
                       <label class="form-check-label fs-5" for="flexRadioDefault1">
                         Saya sudah mencoba menyelesaikan masalah sendiri tapi tidak berhasil
                       </label>
                     </div>
                     <div class="form-check mb-2 p-2 rounded" id="form-check">
-                      <input class="form-check-input mx-1" type="checkbox" name="flexRadioDefault" id="flexRadioDefault2">
+                      <input class="form-check-input mx-1" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
                       <label class="form-check-label fs-5" for="flexRadioDefault2">
                         Saya malu bercerita dengan orang lain/psikolog
                       </label>
                     </div>
                     <div class="form-check mb-2 p-2 rounded" id="form-check">
-                      <input class="form-check-input mx-1" type="checkbox" name="flexRadioDefault" id="flexRadioDefault2">
+                      <input class="form-check-input mx-1" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
                       <label class="form-check-label fs-5" for="flexRadioDefault2">
                         Saya tidak memiliki biaya untuk konseling
                       </label>
@@ -120,19 +120,19 @@
                   <div id="form-radio-5" class="disable">
                     <p class="fs-3">6. Dalam 2 minggu terakhir, seberapa sering kamu merasa khawatir atau putus asa?</p>
                     <div class="form-check mb-2 p-2 rounded" id="form-check">
-                      <input class="form-check-input mx-1" type="checkbox" name="flexRadioDefault" id="flexRadioDefault1">
+                      <input class="form-check-input mx-1" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
                       <label class="form-check-label fs-5" for="flexRadioDefault1">
                         Tidak pernah
                       </label>
                     </div>
                     <div class="form-check mb-2 p-2 rounded" id="form-check">
-                      <input class="form-check-input mx-1" type="checkbox" name="flexRadioDefault" id="flexRadioDefault2">
+                      <input class="form-check-input mx-1" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
                       <label class="form-check-label fs-5" for="flexRadioDefault2">
                         Hampir setiap hari
                       </label>
                     </div>
                     <div class="form-check mb-2 p-2 rounded" id="form-check">
-                      <input class="form-check-input mx-1" type="checkbox" name="flexRadioDefault" id="flexRadioDefault2">
+                      <input class="form-check-input mx-1" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
                       <label class="form-check-label fs-5" for="flexRadioDefault2">
                         Beberapa hari
                       </label>
@@ -143,19 +143,19 @@
                   <div id="form-radio-6" class="disable">
                     <p class="fs-3">7. Dalam satu bulan terakhir, apakah kamu merasa tidak bahagia dan tertekan?</p>
                     <div class="form-check mb-2 p-2 rounded" id="form-check">
-                      <input class="form-check-input mx-1" type="checkbox" name="flexRadioDefault" id="flexRadioDefault1">
+                      <input class="form-check-input mx-1" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
                       <label class="form-check-label fs-5" for="flexRadioDefault1">
                         Tidak pernah
                       </label>
                     </div>
                     <div class="form-check mb-2 p-2 rounded" id="form-check">
-                      <input class="form-check-input mx-1" type="checkbox" name="flexRadioDefault" id="flexRadioDefault2">
+                      <input class="form-check-input mx-1" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
                       <label class="form-check-label fs-5" for="flexRadioDefault2">
                         Hampir setiap hari
                       </label>
                     </div>
                     <div class="form-check mb-2 p-2 rounded" id="form-check">
-                      <input class="form-check-input mx-1" type="checkbox" name="flexRadioDefault" id="flexRadioDefault2">
+                      <input class="form-check-input mx-1" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
                       <label class="form-check-label fs-5" for="flexRadioDefault2">
                         Beberapa hari
                       </label>
@@ -166,19 +166,19 @@
                   <div id="form-radio-7" class="disable">
                     <p class="fs-3">8. Dalam 2 minggu terakhir, seberapa sering kamu sulit berkonsentrasi pada sesuatu?</p>
                     <div class="form-check mb-2 p-2 rounded" id="form-check">
-                      <input class="form-check-input mx-1" type="checkbox" name="flexRadioDefault" id="flexRadioDefault1">
+                      <input class="form-check-input mx-1" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
                       <label class="form-check-label fs-5" for="flexRadioDefault1">
                         Tidak pernah
                       </label>
                     </div>
                     <div class="form-check mb-2 p-2 rounded" id="form-check">
-                      <input class="form-check-input mx-1" type="checkbox" name="flexRadioDefault" id="flexRadioDefault2">
+                      <input class="form-check-input mx-1" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
                       <label class="form-check-label fs-5" for="flexRadioDefault2">
                         Hampir setiap hari
                       </label>
                     </div>
                     <div class="form-check mb-2 p-2 rounded" id="form-check">
-                      <input class="form-check-input mx-1" type="checkbox" name="flexRadioDefault" id="flexRadioDefault2">
+                      <input class="form-check-input mx-1" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
                       <label class="form-check-label fs-5" for="flexRadioDefault2">
                         Beberapa kali
                       </label>
@@ -189,19 +189,19 @@
                   <div id="form-radio-8" class="disable">
                     <p class="fs-3">9. Dalam 2 minggu terakhir, seberapa sering kamu kurang nafsu makan / terlalu banyak makan?</p>
                     <div class="form-check mb-2 p-2 rounded" id="form-check">
-                      <input class="form-check-input mx-1" type="checkbox" name="flexRadioDefault" id="flexRadioDefault1">
+                      <input class="form-check-input mx-1" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
                       <label class="form-check-label fs-5" for="flexRadioDefault1">
                         Tidak pernah
                       </label>
                     </div>
                     <div class="form-check mb-2 p-2 rounded" id="form-check">
-                      <input class="form-check-input mx-1" type="checkbox" name="flexRadioDefault" id="flexRadioDefault2">
+                      <input class="form-check-input mx-1" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
                       <label class="form-check-label fs-5" for="flexRadioDefault2">
                         Hampir setiap hari
                       </label>
                     </div>
                     <div class="form-check mb-2 p-2 rounded" id="form-check">
-                      <input class="form-check-input mx-1" type="checkbox" name="flexRadioDefault" id="flexRadioDefault2">
+                      <input class="form-check-input mx-1" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
                       <label class="form-check-label fs-5" for="flexRadioDefault2">
                         Beberapa hari
                       </label>
@@ -212,24 +212,24 @@
                   <div id="form-radio-9" class="disable">
                     <p class="fs-3">10. Mana yang menjadi keinginanmu?</p>
                     <div class="form-check mb-2 p-2 rounded" id="form-check">
-                      <input class="form-check-input mx-1" type="checkbox" name="flexRadioDefault" id="flexRadioDefault1">
+                      <input class="form-check-input mx-1" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
                       <label class="form-check-label fs-5" for="flexRadioDefault1">
                         Hidup bahagia
                       </label>
                     </div>
                     <div class="form-check mb-2 p-2 rounded" id="form-check">
-                      <input class="form-check-input mx-1" type="checkbox" name="flexRadioDefault" id="flexRadioDefault2">
+                      <input class="form-check-input mx-1" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
                       <label class="form-check-label fs-5" for="flexRadioDefault2">
                         Bisa berhenti khawatir/overthinking
                       </label>
                     </div>
                     <div class="form-check mb-2 p-2 rounded" id="form-check">
-                      <input class="form-check-input mx-1" type="checkbox" name="flexRadioDefault" id="flexRadioDefault2">
+                      <input class="form-check-input mx-1" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
                       <label class="form-check-label fs-5" for="flexRadioDefault2">
                         Jauh dari masalah
                       </label>
                     </div>
-                    <button class="more-btn mt-4" style="margin-top: 10px;">OK <i class="bx bx-chevron-right"></i></button>
+                    <div class="more-btn mt-4" style="margin-top: 10px; cursor: pointer;">OK <i class="bx bx-chevron-right"></i></div>
                   </div>
 
                 </form>
@@ -262,9 +262,14 @@ input[type=text] {
   color: white;
 }
 
-input[type=checkbox] {
+input[type=radio] {
   height: 22px;
   width: 22px;
+}
+
+input[type=radio]:checked {
+  display: inline-block;
+  background-color: #000;
 }
 
 input:focus {
@@ -295,6 +300,7 @@ export default {
     return {
       active: true,
       next: true,
+      nama: "",
     }
   },
   methods: {

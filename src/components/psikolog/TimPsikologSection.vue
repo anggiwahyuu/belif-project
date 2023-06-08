@@ -1,34 +1,32 @@
 <template>
-    <section id="psikolog" class="doctors">
-      <div class="container">
-
+    <section id="psikolog-page" class="doctors section-bg">
         <div class="section-title">
-          <h2>Tim Psikolog</h2>
-          <p>Yuk kenalin psikolog/konselor ahli dalam permasalahanmu dan siap membantumu menemukan jalan keluar.</p>
+            <h2>Psikolog</h2>
+            <p>Mau mulai konsultasi? Yuk kenali psikolog kami!</p>
         </div>
 
-        <div class="row">
-          <div class="col-lg-6 mb-3" v-for="item in konselors" :key="item.id">
-            <div class="member d-flex align-items-start">
-              <div class="pic">
-                <img :src="item.image" class="img-fluid" alt="" loading="lazy">
-              </div>
-              <div class="member-info">
-                <h4>{{ item.nama }}</h4>
-                <span>{{ item.posisi }}</span>
-                <ul>
-                  <li v-for="i in item.spesialis" :key="i.id">{{ i.ahli }}</li>
-                </ul>
-                <div class="button-collection">
-                  <router-link :to="{name: 'detail', params: {id: item.id}}" class="more-btn">Lihat Profil</router-link>
-                  <router-link :to="{name: 'daftar-online', params: {id: item.id}}" class="more-btn">Konsultasi</router-link>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 mb-3" v-for="item in konselors" :key="item.id">
+                    <div class="member d-flex align-items-start">
+                        <div class="pic">
+                            <img :src="item.image" class="img-fluid" alt="" loading="lazy">
+                        </div>
+                        <div class="member-info">
+                            <h4>{{ item.nama }}</h4>
+                            <span>{{ item.posisi }}</span>
+                            <ul>
+                                <li v-for="i in item.spesialis" :key="i.id">{{ i.ahli }}</li>
+                            </ul>
+                            <div class="button-collection">
+                                <router-link :to="{name: 'detail', params: {id: item.id}}" class="more-btn">Lihat Profil</router-link>
+                                <router-link :to="{name: 'daftar-online', params: {id: item.id}}" class="more-btn">Konsultasi</router-link>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
         </div>
-
-      </div>
     </section>
 </template>
 
@@ -52,7 +50,7 @@
 
 <script>
 export default {
-    name: "PsikologSection",
+    name: "TimPsikologSection",
     data() {
       return {
         konselors: [
@@ -101,11 +99,6 @@ export default {
             ]
           }
         ]
-      }
-    },
-    methods: {
-      showDetail() {
-        this.$router.push({name: "detail", params: { nama_psiko: "Thea" }})
       }
     }
 }

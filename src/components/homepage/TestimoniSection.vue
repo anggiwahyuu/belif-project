@@ -15,7 +15,7 @@
                             <p class="fs-6">Mahasiswa</p>
                         </div>
                     </div>
-                    <h4 class="fw-bold fs-5 px-3 pt-3">"Lorem Ipsum Dolor Sit Amet"</h4>
+                    <h4 class="fw-bold fs-5 px-3 pt-3">"Konsultasinya mudah, langsung nangis bombay begitu ketemu psikolognya"</h4>
                     <p class="fs-6 px-3 pb-3"><span class="fw-bold">Problem: </span> Relationship, Pengendalian, Depresi </p>
                 </div>
                 <div class="box me-3">
@@ -26,7 +26,7 @@
                             <p class="fs-6">Ibu Rumah Tangga</p>
                         </div>
                     </div>
-                    <h4 class="fw-bold fs-5 px-3 pt-3">"Lorem Ipsum Dolor Sit Amet"</h4>
+                    <h4 class="fw-bold fs-5 px-3 pt-3">"Awalnya ragu, tapi aku menemukan jalan keluar dari masa trauma perselingkuhan"</h4>
                     <p class="fs-6 px-3 pb-3"><span class="fw-bold">Problem: </span> Duka cita, Kurang Kasih Sayang, Perselingkuhan </p>
                 </div>
                 <div class="box me-3">
@@ -37,7 +37,7 @@
                             <p class="fs-6">Karyawan</p>
                         </div>
                     </div>
-                    <h4 class="fw-bold fs-5 px-3 pt-3">"Lorem Ipsum Dolor Sit Amet"</h4>
+                    <h4 class="fw-bold fs-5 px-3 pt-3">"Dengan konseling, gue lebih mengenal diri sendiri"</h4>
                     <p class="fs-6 px-3 pb-3"><span class="fw-bold">Problem: </span> Pengendalian Emosi, KDRT, Trauma Psikis </p>
                 </div>
                 <div class="box">
@@ -48,7 +48,7 @@
                             <p class="fs-6">Mahasiswa</p>
                         </div>
                     </div>
-                    <h4 class="fw-bold fs-5 px-3 pt-3">"Lorem Ipsum Dolor Sit Amet"</h4>
+                    <h4 class="fw-bold fs-5 px-3 pt-3">"Masalah aku berat banget, tapi disini aku menemukan makna hidup untuk jangan pernah lari dari masalah"</h4>
                     <p class="fs-6 px-3 pb-3"><span class="fw-bold">Problem: </span> Pengendalian Emosi, KDRT, Trauma Psikis </p>
                 </div>
             </div>

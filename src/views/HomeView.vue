@@ -9,7 +9,7 @@
     <why-us-section/>
     <about-section/>
     <services-section/>
-    <appointment-section/>
+    <join-section/>
     <rekomendasi-section/>
     <psikolog-section/>
     <testimoni-section/>
@@ -31,7 +31,7 @@ import HeroSection from "@/components/homepage/HeroSection.vue"
 import WhyUsSection from "@/components/homepage/WhyUsSection.vue"
 import AboutSection from "@/components/homepage/AboutSection.vue"
 import ServicesSection from "@/components/homepage/ServicesSection.vue"
-import AppointmentSection from "@/components/homepage/AppointmentSection.vue"
+import JoinSection from "@/components/homepage/JoinSection.vue"
 import RekomendasiSection from "@/components/homepage/RekomendasiSection.vue"
 import PsikologSection from "@/components/homepage/PsikologSection.vue"
 import TestimoniSection from "@/components/homepage/TestimoniSection.vue"
@@ -46,7 +46,7 @@ export default {
     WhyUsSection,
     AboutSection,
     ServicesSection,
-    AppointmentSection, 
+    JoinSection, 
     RekomendasiSection,
     PsikologSection,
     TestimoniSection,

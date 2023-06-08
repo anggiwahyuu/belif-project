@@ -10,11 +10,11 @@
                 <li><router-link class="nav-link" to="/tentangkami" style="text-decoration: none;">Tentang Kami</router-link></li>
                 <li><router-link class="nav-link" to="/a" style="text-decoration: none;">Layanan</router-link></li>
                 <li><router-link class="nav-link" to="/literasi" style="text-decoration: none;">Literasi</router-link></li>
-                <li><router-link class="nav-link" to="/c" style="text-decoration: none;">Tim Psikolog</router-link></li>
+                <li><router-link class="nav-link" to="/psikolog" style="text-decoration: none;">Tim Psikolog</router-link></li>
             </ul>
         </nav>
 
-        <a href="#" class="appointment-btn scrollto" style="text-decoration: none;"><span class="d-none d-md-inline">Masuk</span></a>
+        <router-link to="/login" class="appointment-btn scrollto" style="text-decoration: none;"><span class="d-none d-md-inline">Masuk</span></router-link>
 
     </div>
 </template>

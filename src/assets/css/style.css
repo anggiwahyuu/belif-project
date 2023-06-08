@@ -481,7 +481,6 @@ h6 {
   height: 90vh;
   background: url("../img/stres2.jpg") top center;
   background-size: cover;
-  margin-bottom: -200px;
 }
 
 #hero .container {
@@ -700,70 +699,16 @@ section {
 /*--------------------------------------------------------------
 # Why Us
 --------------------------------------------------------------*/
-.why-us .content {
-  padding: 30px;
-  background: #1977cc;
-  border-radius: 4px;
-  color: #fff;
-}
-
-.why-us .content h3 {
-  font-weight: 700;
-  font-size: 34px;
-  margin-bottom: 30px;
-}
-
-.why-us .content p {
-  margin-bottom: 30px;
-}
-
-.why-us .content .more-btn {
-  display: inline-block;
-  background: rgba(255, 255, 255, 0.2);
-  padding: 6px 30px 8px 30px;
-  color: #fff;
-  border-radius: 50px;
-  transition: all ease-in-out 0.4s;
-}
-
-.why-us .content .more-btn i {
-  font-size: 14px;
-}
-
-.why-us .content .more-btn:hover {
-  color: #1977cc;
-  background: #fff;
-}
-
-.why-us .icon-boxes .icon-box {
+.why-us .section-title-why {
   text-align: center;
-  border-radius: 10px;
-  background: #fff;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-  padding: 40px 30px;
-  width: 100%;
+  padding-bottom: 30px;
 }
 
-.why-us .icon-boxes .icon-box i {
-  font-size: 40px;
-  color: #1977cc;
-  margin-bottom: 30px;
-}
-
-.why-us .icon-boxes .icon-box h4 {
-  font-size: 20px;
-  font-weight: 700;
-  margin: 0 0 30px 0;
-}
-
-.why-us .icon-boxes .icon-box p {
-  font-size: 15px;
-  color: #848484;
-}
-
-.why-us .icon-boxes .icon-box ol li {
-  font-size: 15px;
-  color: #848484;
+.why-us .section-title-why h2 {
+  font-size: 32px;
+  font-weight: bold;
+  position: relative;
+  color: #2c4964;
 }
 
 /*--------------------------------------------------------------
@@ -1019,100 +964,24 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Appointments
+# join
 --------------------------------------------------------------*/
-.appointment .php-email-form {
-  width: 100%;
-}
-
-.appointment .php-email-form .form-group {
-  padding-bottom: 8px;
-}
-
-.appointment .php-email-form .validate {
-  display: none;
-  color: red;
-  margin: 0 0 15px 0;
-  font-weight: 400;
-  font-size: 13px;
-}
-
-.appointment .php-email-form .error-message {
-  display: none;
-  color: #fff;
-  background: #ed3c0d;
-  text-align: left;
-  padding: 15px;
-  font-weight: 600;
-}
-
-.appointment .php-email-form .error-message br+br {
-  margin-top: 25px;
-}
-
-.appointment .php-email-form .sent-message {
-  display: none;
-  color: #fff;
-  background: #18d26e;
-  text-align: center;
-  padding: 15px;
-  font-weight: 600;
-}
-
-.appointment .php-email-form .loading {
-  display: none;
-  background: #fff;
-  text-align: center;
-  padding: 15px;
-}
-
-.appointment .php-email-form .loading:before {
-  content: "";
+.join .more-btn {
   display: inline-block;
-  border-radius: 50%;
-  width: 24px;
-  height: 24px;
-  margin: 0 10px -6px 0;
-  border: 3px solid #18d26e;
-  border-top-color: #eee;
-  animation: animate-loading 1s linear infinite;
-}
-
-.appointment .php-email-form input,
-.appointment .php-email-form textarea,
-.appointment .php-email-form select {
-  border-radius: 0;
-  box-shadow: none;
-  font-size: 14px;
-  padding: 10px !important;
-}
-
-.appointment .php-email-form input:focus,
-.appointment .php-email-form textarea:focus,
-.appointment .php-email-form select:focus {
-  border-color: #1977cc;
-}
-
-.appointment .php-email-form input,
-.appointment .php-email-form select {
-  height: 44px;
-}
-
-.appointment .php-email-form textarea {
-  padding: 10px 12px;
-}
-
-.appointment .php-email-form button[type=submit] {
   background: #1977cc;
-  border: 0;
-  padding: 10px 35px;
+  padding: 6px 30px 8px 30px;
   color: #fff;
-  transition: 0.4s;
+  border: none;
   border-radius: 50px;
+  transition: all ease-in-out 0.4s;
 }
 
-.appointment .php-email-form button[type=submit]:hover {
-  background: #1c84e3;
+.join .more-btn i {
+  font-size: 14px;
+}
+
+.join .more-btn:hover {
+  background: #3291e6;
 }
 
 /*--------------------------------------------------------------
@@ -1140,10 +1009,6 @@ section {
 /*--------------------------------------------------------------
 # Doctors
 --------------------------------------------------------------*/
-.doctors {
-  background: #fff;
-}
-
 .doctors .member {
   position: relative;
   box-shadow: 0px 2px 15px rgba(44, 73, 100, 0.08);
@@ -1198,38 +1063,6 @@ section {
 .doctors .member p {
   margin: 10px 0 0 0;
   font-size: 14px;
-}
-
-.doctors .member .social {
-  margin-top: 12px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-
-.doctors .member .social a {
-  transition: ease-in-out 0.3s;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50px;
-  width: 32px;
-  height: 32px;
-  background: #a0bcd5;
-}
-
-.doctors .member .social a i {
-  color: #fff;
-  font-size: 16px;
-  margin: 0 2px;
-}
-
-.doctors .member .social a:hover {
-  background: #1977cc;
-}
-
-.doctors .member .social a+a {
-  margin-left: 8px;
 }
 
 /*--------------------------------------------------------------
