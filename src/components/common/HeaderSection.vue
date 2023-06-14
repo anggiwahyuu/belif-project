@@ -8,7 +8,15 @@
             <ul>
                 <li><router-link class="nav-link" to="/" style="text-decoration: none;">Beranda</router-link></li>
                 <li><router-link class="nav-link" to="/tentangkami" style="text-decoration: none;">Tentang Kami</router-link></li>
-                <li><router-link class="nav-link" to="/a" style="text-decoration: none;">Layanan</router-link></li>
+                <!-- <li><router-link class="nav-link" to="/layanan" style="text-decoration: none;">Layanan</router-link></li> -->
+                <li class="dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" style="text-decoration: none;">Layanan</a>
+                    <ul class="dropdown-menu">
+                        <li><router-link to="/a" class="dropdown-item" style="text-decoration: none;">Belif For Student</router-link></li>
+                        <li><router-link to="/layanan/parenting" class="dropdown-item" style="text-decoration: none;">Belif For Parenting</router-link></li>
+                        <li><router-link to="/c" class="dropdown-item" style="text-decoration: none;">Belif For Karyawan</router-link></li>
+                    </ul>
+                </li>
                 <li><router-link class="nav-link" to="/literasi" style="text-decoration: none;">Literasi</router-link></li>
                 <li><router-link class="nav-link" to="/psikolog" style="text-decoration: none;">Tim Psikolog</router-link></li>
             </ul>

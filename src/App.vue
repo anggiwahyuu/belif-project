@@ -40,6 +40,10 @@ export default {
     const mainJs = document.createElement('script');
     mainJs.setAttribute("src", "assets/js/main");
     document.head.appendChild(mainJs);
+
+    const fontAwesome = document.createElement("script");
+    fontAwesome.setAttribute("src", "https://kit.fontawesome.com/1f7b6bd2fb.js");
+    document.head.appendChild(fontAwesome);
   }
 }
 </script>

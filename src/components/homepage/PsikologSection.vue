@@ -21,7 +21,34 @@
                 </ul>
                 <div class="button-collection">
                   <router-link :to="{name: 'detail', params: {id: item.id}}" class="more-btn">Lihat Profil</router-link>
-                  <router-link :to="{name: 'daftar-online', params: {id: item.id}}" class="more-btn">Konsultasi</router-link>
+                  <a href="#" class="more-btn" style="text-decoration: none;" data-bs-toggle="modal" data-bs-target="#buatJanjiTemu" @click="sendKonselor(item)">Buat Janji</a>
+
+                  <div class="modal fade section-modal" id="buatJanjiTemu" tabindex="-1" aria-labelledby="buatJanjiTemuLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                          <div class="modal-content">
+                              <div class="modal-header">
+                                  <h1 class="modal-title fs-5 text-black" id="modalBuatJanjiTemuLabel">Buat Janji Temu Psikolog/Konselor
+                                  </h1>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                              </div>
+                              <div class="modal-body">
+                                  <center>
+                                    <div>
+                                      <img :src="selectedKonselor.image" class="rounded-circle" alt="Image Konselor" style="width: 20%;">
+                                      <h4 class="fw-bold fs-5 mt-3">{{ selectedKonselor.nama }}</h4>
+                                      <div class="d-flex justify-content-center">
+                                          <p v-for="it in selectedKonselor.spesialis" :key="it.id" class="spesialis mx-1 px-2 py-1 fw-semibold rounded-pill">{{ it.ahli }}</p>
+                                      </div>
+                                      <p>Melayani : <i class="fa-solid fa-phone-volume ms-1 me-1"></i> Voice Call <i class="fa-sharp fa-solid fa-mobile ms-3 me-1"></i> Video Call</p>
+                                      <button type="button" @click="goBooking(selectedKonselor.id)" class="more-btn mt-4">Booking</button>
+                                    </div>
+                                  </center>
+                              </div>
+                              <div class="modal-footer"></div>
+                          </div>
+                      </div>
+                  </div>
+
                 </div>
               </div>
             </div>
@@ -47,6 +74,12 @@
 
 .more-btn:hover {
   background: #3291e6;
+}
+
+.spesialis {
+    font-size: 13px;
+    color: white;
+    background: #1977cc;
 }
 </style>
 
@@ -100,12 +133,17 @@ export default {
               {ahli: "Perkembangan Diri"}
             ]
           }
-        ]
+        ],
+        selectedKonselor: Object
       }
     },
     methods: {
-      showDetail() {
-        this.$router.push({name: "detail", params: { nama_psiko: "Thea" }})
+      sendKonselor(item) {
+        this.selectedKonselor = item
+      },
+      async goBooking(id) {
+        await this.$router.push({name: "daftar-online", params: {id: id}})
+        this.$router.go()
       }
     }
 }

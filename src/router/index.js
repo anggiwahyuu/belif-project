@@ -21,6 +21,42 @@ const routes = [
   },
 
   {
+    path: '/layanan/parenting',
+    name: 'layanan-parenting',
+    component: () => import("../views/layanan/parenting/LayananParentingView.vue"),
+    meta: {
+      title: "A Better Life With Belif | Layanan"
+    }
+  },
+
+  {
+    path: '/layanan/parenting/artikel',
+    name: 'layanan-parenting-artikel',
+    component: () => import("../views/layanan/parenting/ArtikelParentingView.vue"),
+    meta: {
+      title: "A Better Life With Belif | Layanan"
+    }
+  },
+
+  {
+    path: '/layanan/parenting/modul',
+    name: 'layanan-parenting-modul',
+    component: () => import("../views/layanan/parenting/ModulParentingView.vue"),
+    meta: {
+      title: "A Better Life With Belif | Layanan"
+    }
+  },
+
+  {
+    path: '/layanan/parenting/workshop',
+    name: 'layanan-parenting-workshop',
+    component: () => import("../views/layanan/parenting/WorkshopParentingView.vue"),
+    meta: {
+      title: "A Better Life With Belif | Layanan"
+    }
+  },
+
+  {
     path: '/literasi',
     name: 'literasi',
     component: () => import("../views/LiterasiView.vue"),
@@ -72,12 +108,23 @@ const routes = [
     meta: {
       title: "Register"
     }
-  }
+  },
 ]
 
 const router = createRouter({
   history: createWebHashHistory(),
-  routes
+  routes,
+  scrollBehavior(to, from, savedPosition) {
+    if (to.hash) {
+      console.log("From: ", from)
+      console.log("To: ", to)
+      console.log("Saved Position: ", savedPosition)
+      return {
+        el: to.hash,
+        behavior: 'smooth'
+      }
+    }
+  }
 })
 
 export default router
