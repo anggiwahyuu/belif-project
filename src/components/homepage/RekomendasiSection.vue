@@ -8,7 +8,7 @@
 
         <div class="container p-5 rounded-5" style="background: #1977cc;">
           <div class="text-white d-md-flex">
-            <div class="left-content disable" id="left-content">
+            <div class="left-content" id="left-content">
               <div class="starting" :style="{ display: active? 'block' : 'none'}">
                 <h3 class="fw-bold mb-5 fs-1">Rekomendasi Produk Sesuai Kebutuhan Anda!</h3>
                 <p class="mb-5 fs-5">Masih bingung untuk memilih produk? Belif siap membantu memilih produk yang paling tepat khusus untuk Anda. Cukup dengan menjawab kuisioner saja!</p>
@@ -245,14 +245,14 @@
                 </form>
               </div>
             </div>
-            <div class="right-content disable" id="right-content">
+            <div class="right-content" id="right-content">
               <img src="../../assets/img/belif1.jpg" class="rounded-circle" style="width: 100%;" alt="Belif">
             </div>
 
-            <div class="left-content-2" id="left-content-2">
+            <div class="left-content-2 disable" id="left-content-2">
               <img src="@/assets/img/konsultasi.jpg" class="rounded-5" style="width: 100%;" alt="Image Konsultasi">
             </div>
-            <div class="right-content-2" id="right-content-2">
+            <div class="right-content-2 disable" id="right-content-2">
               <p class="fs-5 fw-semibold">{{ textResult }}</p>
               <p>Klik tombol di bawah untuk mulai mentoring ya!</p>
               <router-link :to="{name: 'home', hash: '#layanan'}" class="more-btn" style="text-decoration: none;">Mulai Mentoring</router-link>
