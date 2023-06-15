@@ -5,15 +5,15 @@
                 <h2>Post</h2>
             </div>
 
-            <div class="container d-flex flex-row justify-content-between">
-                <div class="box rounded me-5">
+            <div class="container d-lg-flex flex-row justify-content-between d-block">
+                <div class="box rounded me-5 mb-lg-0 mb-4">
                     <a href="https://www.halodoc.com/kesehatan/gangguan-panik" style="text-decoration: none;">
                         <img src="https://d1vbn70lmn1nqe.cloudfront.net/prod/wp-content/uploads/2021/06/20072544/gangguan-panik-halodoc.jpg.webp" alt="Artikel 1" class="image mb-4 rounded-top" loading="lazy">
                         <h4 class="fw-bold p-3">Gangguan Panik</h4>
                         <p class="p-3">Gangguan panik ditandai dengan rasa ketakutan yang terjadi secara intens dan tiba-tiba sehingga memicu reaksi fisik yang parah. Pemicunya seringkali tidak jelas bahkan tidak membahayakan. Namun, pengidap serangan panik bisa merasa sangat ketakutan, kehilangan kendali, mengalami serangan jantung, atau bahkan sekarat. Meskipun serangan panik itu sendiri tidak mengancam jiwa, tetapi kondisi ini bisa mempengaruhi kualitas hidup pengidapnya.</p>
                     </a>
                 </div>
-                <div class="box rounded me-5">
+                <div class="box rounded me-5 mb-lg-0 mb-4">
                     <a href="https://kumparan.com/nada-keysha/pentingnya-edukasi-kesehatan-mental-pada-remaja-1wyZnFQP3Je/1" style="text-decoration: none;">
                         <img src="https://blue.kumparan.com/image/upload/fl_progressive,fl_lossy,c_fill,q_auto:best,w_640/v1638101282/boitf6mauxhi7g9lngzh.jpg" alt="Artikel 2" class="image mb-4 rounded-top" loading="lazy">
                         <h4 class="fw-bold p-3">Pentingnya Edukasi Kesehatan Mental pada Remaja</h4>

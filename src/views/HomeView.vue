@@ -8,9 +8,9 @@
   <main id="main">
     <why-us-section/>
     <about-section/>
-    <services-section/>
+    <services-section id="layanan"/>
     <join-section id="komunitas"/>
-    <rekomendasi-section/>
+    <rekomendasi-section id="rekomendasi"/>
     <psikolog-section/>
     <testimoni-section/>
     <f-a-q-section/>

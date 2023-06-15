@@ -6,20 +6,20 @@
                 <p>{{ text_title }}</p>
             </div>
 
-            <div class="container d-flex justify-content-center">
-                <div class="box" @click="goToArtikel()">
+            <div class="container d-md-flex justify-content-center d-block">
+                <div class="box mx-md-3 mb-md-0 mb-3" @click="goToArtikel()">
                     <i class="fa-solid fa-newspaper"></i>
                     <p class="fw-bold">Artikel</p>
                 </div>
-                <div class="box" @click="goToModul()">
+                <div class="box mx-md-3 mb-md-0 mb-3" @click="goToModul()">
                     <i class="fa-solid fa-book"></i>
                     <p class="fw-bold">Modul</p>
                 </div>
-                <div class="box" @click="goToWorkshop()">
+                <div class="box mx-md-3 mb-md-0 mb-3" @click="goToWorkshop()">
                     <i class="fa-solid fa-briefcase"></i>
                     <p class="fw-bold">Workshop</p>
                 </div>
-                <div class="box" @click="goToPsikolog()">
+                <div class="box mx-md-3" @click="goToPsikolog()">
                     <i class="fa-brands fa-rocketchat"></i>
                     <p class="fw-bold">Tanya Ahli</p>
                 </div>
@@ -30,11 +30,10 @@
 
 <style scoped>
 .box {
-    width: 200px;
+    width: 100%;
     border: 1px solid #1977cc;
     border-radius: 10px;
     color: #1977cc;
-    margin: 0px 10px;
     padding-top: 30px;
     padding-bottom: 15px;
     text-align: center;

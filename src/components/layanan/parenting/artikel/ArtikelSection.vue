@@ -1,6 +1,6 @@
 <template>
     <section>
-        <div class="container" style="padding: 0 200px;">
+        <div class="container content">
             <div class="search rounded-pill d-flex justify-content-center">
                 <input type="search" name="search-article" id="search-article" placeholder="Cari Artikel">
                 <label for="search-article"><i class="fa-solid fa-magnifying-glass fa-xl ms-3" style="color: #1977cc;"></i></label>
@@ -11,13 +11,13 @@
                 <p class="mx-1 px-3 py-1 fw-semibold rounded-pill fs-6">Bullying</p>
             </div>
             <div class="list-artikel">
-                <div class="my-3 d-flex" v-for="item in articles" :key="item.id">
+                <div class="my-3 d-md-flex" v-for="item in articles" :key="item.id">
                     <div class="image">
                         <img :src="item.image" alt="Image Article" style="width: 100%; height: auto;" loading="lazy">
                     </div>
-                    <div class="konten ms-3">
-                        <h3 class="fs-5 fw-bold">{{ item.title }}</h3>
-                        <p class="fs-6">{{ item.content }}</p>
+                    <div class="ms-md-3 my-md-0 my-3">
+                        <h3 class="fs-6 fw-bold text-md-start text-center">{{ item.title }}</h3>
+                        <p class="fs-6 text-md-start text-center">{{ item.content }}</p>
                     </div>
                 </div>
             </div>
@@ -26,6 +26,10 @@
 </template>
 
 <style scoped>
+.content{
+    padding: 0 200px;
+}
+
 .search {
     margin: auto;
     border: 1px solid #1977cc;
@@ -60,6 +64,22 @@ input:focus {
 .image {
     width: 20%;
     height: auto;
+}
+
+@media (max-width: 992px) {
+    .content {
+        padding: 0;
+    }
+
+    .list-artikel {
+        padding: 0 10px;
+        align-items: center;
+    }
+    .image {
+        width: 50%;
+        margin: auto;
+    }
+
 }
 </style>
 

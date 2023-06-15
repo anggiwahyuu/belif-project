@@ -1,7 +1,7 @@
 <template>
     <section id="kebersamaan">
         <div class="container">
-            <div class="d-flex justify-content-center">
+            <div class="d-md-flex justify-content-center d-block">
                 <div class="left-content">
                     <center>
                         <img src="@/assets/img/kebersamaan-keluarga.png" alt="Image Kebersamaan" loading="lazy">
@@ -17,11 +17,11 @@
 
 <style scoped>
 .left-content {
-    width: 50%;
+    width: 100%;
 }
 
 .right-content{
-    width: 50%;
+    width: 100%;
 }
 </style>
 

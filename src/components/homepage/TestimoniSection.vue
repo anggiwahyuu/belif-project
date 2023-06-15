@@ -6,9 +6,9 @@
                 <p>Mereka sudah menemukan makna hidup yang baru. Kamu Selanjutnya???</p>
             </div>
 
-            <div class="container d-flex flex-row justify-content-between">
+            <div class="container d-lg-flex flex-row justify-content-between">
                 <div class="box me-3">
-                    <div class="image d-flex px-3 mt-3">
+                    <div class="image d-flex px-3 mt-3 pt-xl-0 pt-3">
                         <img src="../../assets/img/mahasiswa.jpg" class="image-profesi" alt="Mahasiswa">
                         <div class="d-flex flex-column ms-3 justify-content-center">
                             <h5 class="fw-bold fs-6">Jane Doe</h5>
@@ -19,7 +19,7 @@
                     <p class="fs-6 px-3 pb-3"><span class="fw-bold">Problem: </span> Relationship, Pengendalian, Depresi </p>
                 </div>
                 <div class="box me-3">
-                    <div class="image d-flex px-3 mt-3">
+                    <div class="image d-flex px-3 mt-3 pt-xl-0 pt-3">
                         <img src="../../assets/img/irt.jpg" class="image-profesi" alt="Ibu Rumah Tangga">
                         <div class="d-flex flex-column ms-3 justify-content-center">
                             <h5 class="fw-bold fs-6">Marcel Doe</h5>
@@ -30,7 +30,7 @@
                     <p class="fs-6 px-3 pb-3"><span class="fw-bold">Problem: </span> Duka cita, Kurang Kasih Sayang, Perselingkuhan </p>
                 </div>
                 <div class="box me-3">
-                    <div class="image d-flex px-3 mt-3">
+                    <div class="image d-flex px-3 mt-3 pt-xl-0 pt-3">
                         <img src="../../assets/img/karyawan.jpg" class="image-profesi" alt="Karyawan">
                         <div class="d-flex flex-column ms-3 justify-content-center">
                             <h5 class="fw-bold fs-6">Michael</h5>
@@ -41,7 +41,7 @@
                     <p class="fs-6 px-3 pb-3"><span class="fw-bold">Problem: </span> Pengendalian Emosi, KDRT, Trauma Psikis </p>
                 </div>
                 <div class="box">
-                    <div class="image d-flex px-3 mt-3">
+                    <div class="image d-flex px-3 mt-3 pt-xl-0 pt-3">
                         <img src="../../assets/img/mahasiswa.jpg" class="image-profesi" alt="Mahasiswa">
                         <div class="d-flex flex-column ms-3 justify-content-center">
                             <h5 class="fw-bold fs-6">Jess</h5>

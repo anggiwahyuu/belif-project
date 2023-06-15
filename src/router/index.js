@@ -106,7 +106,16 @@ const routes = [
     name: 'daftar-online',
     component: () => import("../views/KonsultasiOnlineFormView.vue"),
     meta: {
-      title: "Register"
+      title: "Daftar Konsultasi"
+    }
+  },
+
+  {
+    path: '/checkout/:id',
+    name: 'checkout',
+    component: () => import("../views/CheckoutView.vue"),
+    meta: {
+      title: "Checkout"
     }
   },
 ]

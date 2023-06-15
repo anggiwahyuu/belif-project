@@ -44,6 +44,10 @@ export default {
     const fontAwesome = document.createElement("script");
     fontAwesome.setAttribute("src", "https://kit.fontawesome.com/1f7b6bd2fb.js");
     document.head.appendChild(fontAwesome);
+
+    const sweetAlert = document.createElement("script");
+    sweetAlert.setAttribute("src", "sweetalert2.all.min.js");
+    document.head.appendChild(sweetAlert);
   }
 }
 </script>

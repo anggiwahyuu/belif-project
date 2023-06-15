@@ -47,8 +47,11 @@
                     <div class="d-flex flex-column" style="width: 49%;">
                         <p style="margin-bottom: 3px;">Pilih Waktu</p>
                         <div class="d-flex">
-                            <button type="button" class="btn btn-time my-3" v-for="item in time" :key="item.id">{{ item.jam }}</button>
+                            <button type="button" class="btn btn-time my-3" id="jam13" @click="addJam13()">13.00</button>
+                            <button type="button" class="btn btn-time my-3" id="jam14" @click="addJam14()">14.00</button>
+                            <button type="button" class="btn btn-time my-3" id="jam15" @click="addJam15()">15.00</button>
                         </div>
+                        <p>Waktu terpilih : {{ waktuTerpilih }}</p>
                     </div>
                 </div>
             </div>
@@ -59,7 +62,7 @@
                 <h4 class="fw-bold fs-6">Ringkasan Biaya</h4>
                 <div class="d-flex justify-content-between">
                     <p>Biaya Konseling</p>
-                    <p class="fw-semibold">{{ biaya_konseling }}</p>
+                    <p class="fw-semibold">Rp {{ biaya_konseling }}</p>
                 </div>
                 <div class="d-flex justify-content-between" style="margin-top: -18px;">
                     <p>Biaya Administrasi</p>
@@ -71,11 +74,11 @@
                 </div>
                 <div class="d-flex justify-content-between">
                     <p class="fw-semibold text-danger">Total Harga</p>
-                    <p class="fw-semibold text-danger">{{ biaya_konseling }}</p>
+                    <p class="fw-semibold text-danger">Rp {{ biaya_konseling }}</p>
                 </div>
             </div>
 
-            <center><button type="button" class="btn more-btn my-3">Lanjutkan</button></center>
+            <center><button type="button" @click="goToCheckout()" class="btn more-btn my-3">Lanjutkan</button></center>
 
         </div>
     </div>
@@ -155,13 +158,7 @@ hr {
     transition: all ease-in-out 0.4s;
 }
 
-.btn-time:hover {
-    color: #fff;
-    border: none;
-    background: #1977cc;
-}
-
-.btn-active {
+.btn-time-active {
     margin: 0 5px;
     padding: 5px 10px;
     border: none;
@@ -170,6 +167,12 @@ hr {
     background: #1977cc;
     font-size: 12px;
     transition: all ease-in-out 0.4s;
+}
+
+.btn-time:hover {
+    color: #fff;
+    border: none;
+    background: #1977cc;
 }
 </style>
 
@@ -181,7 +184,7 @@ export default {
             konselors: [
                 {
                     id: 0,
-                    nama: "Walter White", 
+                    nama: "Jessica Maha Dewi", 
                     image: require("@/assets/img/konselor/konselor2.jpg"), 
                     posisi: "Chief Medical Officer", 
                     spesialis: [
@@ -192,7 +195,7 @@ export default {
                 },
                 {
                     id: 1,
-                    nama: "Sarah Johnson", 
+                    nama: "Siti Fathonah",
                     image: require("@/assets/img/konselor/konselor1.jpg"), 
                     posisi: "Anesthesiologist", 
                     spesialis: [
@@ -203,7 +206,7 @@ export default {
                 },
                 {
                     id: 2,
-                    nama: "William Anderson", 
+                    nama: "Edi Handoko Setiawan", 
                     image: require("@/assets/img/konselor/konselor3.jpg"), 
                     posisi: "Cardiology", 
                     spesialis: [
@@ -214,7 +217,7 @@ export default {
                 },
                 {
                     id: 3,
-                    nama: "Amanda Jepson", 
+                    nama: "Farida Setyaningsih",
                     image: require("@/assets/img/konselor/konselor4.jpg"), 
                     posisi: "Neurosurgeon", 
                     spesialis: [
@@ -225,19 +228,118 @@ export default {
                 }
             ],
             lorem_ipsum: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-            biaya_konseling: "Rp 100.000",
+            biaya_konseling: 100000,
             gratis: "Gratis",
             myDate: new Date().toISOString().slice(0, 10),
             time: [
                 {jam: "13.00"},
                 {jam: "14.00"},
                 {jam: "15.00"}
-            ]
+            ],
+            jam13: false,
+            jam14: false,
+            jam15: false,
+            waktuTerpilih: ""
         }
     },
     methods: {
         goBack() {
             this.$router.go(-1)
+        },
+        addJam13() {
+            if (!this.jam13) {
+                if (this.jam14) {
+                    this.jam13 = !this.jam13
+                    this.jam14 = !this.jam14
+
+                    document.getElementById("jam13").classList.add("btn-time-active")
+                    document.getElementById("jam13").classList.remove("btn-time")
+
+                    document.getElementById("jam14").classList.add("btn-time")
+                    document.getElementById("jam14").classList.remove("btn-time-active")
+                } else if (this.jam15) {
+                    this.jam13 = !this.jam13
+                    this.jam15 = !this.jam15
+
+                    document.getElementById("jam13").classList.add("btn-time-active")
+                    document.getElementById("jam13").classList.remove("btn-time")
+
+                    document.getElementById("jam15").classList.add("btn-time")
+                    document.getElementById("jam15").classList.remove("btn-time-active")
+                } else {
+                    this.jam13 = !this.jam13
+
+                    document.getElementById("jam13").classList.add("btn-time-active")
+                    document.getElementById("jam13").classList.remove("btn-time")
+                }
+            }
+            this.waktuTerpilih = this.time[0].jam
+        },
+        addJam14() {
+            if (!this.jam14) {
+                if (this.jam13) {
+                    this.jam14 = !this.jam14
+                    this.jam13 = !this.jam13
+
+                    document.getElementById("jam14").classList.add("btn-time-active")
+                    document.getElementById("jam14").classList.remove("btn-time")
+
+                    document.getElementById("jam13").classList.add("btn-time")
+                    document.getElementById("jam13").classList.remove("btn-time-active")
+                } else if (this.jam15) {
+                    this.jam14 = !this.jam14
+                    this.jam15 = !this.jam15
+
+                    document.getElementById("jam14").classList.add("btn-time-active")
+                    document.getElementById("jam14").classList.remove("btn-time")
+
+                    document.getElementById("jam15").classList.add("btn-time")
+                    document.getElementById("jam15").classList.remove("btn-time-active")
+                } else {
+                    this.jam14 = !this.jam14
+
+                    document.getElementById("jam14").classList.add("btn-time-active")
+                    document.getElementById("jam14").classList.remove("btn-time")
+                }
+            } 
+            this.waktuTerpilih = this.time[1].jam
+        },
+        addJam15() {
+            if (!this.jam15) {
+                if (this.jam13) {
+                    this.jam15 = !this.jam15
+                    this.jam13 = !this.jam13
+
+                    document.getElementById("jam15").classList.add("btn-time-active")
+                    document.getElementById("jam15").classList.remove("btn-time")
+
+                    document.getElementById("jam13").classList.add("btn-time")
+                    document.getElementById("jam13").classList.remove("btn-time-active")
+                } else if (this.jam14) {
+                    this.jam15 = !this.jam15
+                    this.jam14 = !this.jam14
+
+                    document.getElementById("jam15").classList.add("btn-time-active")
+                    document.getElementById("jam15").classList.remove("btn-time")
+
+                    document.getElementById("jam14").classList.add("btn-time")
+                    document.getElementById("jam14").classList.remove("btn-time-active")
+                } else {
+                    this.jam15 = !this.jam15
+
+                    document.getElementById("jam15").classList.add("btn-time-active")
+                    document.getElementById("jam15").classList.remove("btn-time")
+                }
+            } 
+            this.waktuTerpilih = this.time[2].jam
+        },
+        async goToCheckout() {
+            if (this.waktuTerpilih != "") {
+                await this.$router.push({name: "checkout", params: {id: this.biaya_konseling}})
+                this.$router.go()
+            } else {
+                alert("Pilih Waktunya Dulu Bro!!!")
+            }
         }
     }
 }

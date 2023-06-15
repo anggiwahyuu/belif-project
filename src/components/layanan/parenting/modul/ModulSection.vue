@@ -3,7 +3,7 @@
         <div class="container">
             <div class="pilih-kategori">
                 <h4 class="fw-bold" style="color: #2c4964;">Pilih Kategori</h4>
-                <div class="item-kategori d-flex">
+                <div class="item-kategori d-md-flex">
                     <div class="me-4">
                         <input type="checkbox" name="konsultasi" id="konsultasi">
                         <label class="ms-1" for="konsultasi">Konsultasi</label>
@@ -32,8 +32,8 @@
                     <p class="mx-1 px-3 py-1 fw-semibold rounded-pill fs-6">Semua</p>
                     <p class="mx-1 px-3 py-1 fw-semibold rounded-pill fs-6">Parenting</p>
                 </div>
-                <div class="konten d-flex">
-                    <div class="box rounded mx-4 d-flex flex-column justify-content-between" v-for="item in modules" :key="item.id">
+                <div class="konten d-flex flex-md-row flex-column align-items-center flex-wrap">
+                    <div class="box rounded mx-md-3 my-md-0 my-3 d-flex flex-column justify-content-between" v-for="item in modules" :key="item.id">
                         <div class="mb-3">
                             <img :src="item.image" class="rounded-top" alt="Image Module">
                             <h5 class="fs-6 px-3 pt-3 text-danger">{{ item.category }}</h5>
@@ -41,7 +41,7 @@
                         </div>
                         <div class="px-3">
                             <p class="text-success" style="margin-bottom: -10px;">Rp {{ item.price }}</p>
-                            <center><a href="" class="more-btn my-3">Beli</a></center>
+                            <center><router-link :to="{name: 'checkout', params: {id: item.price}}" class="more-btn my-3">Beli</router-link></center>
                         </div>
                     </div>
                 </div>
@@ -69,6 +69,7 @@
     height: auto;
     border: none;
     background: white;
+    margin: 0;
 }
 
 .konten .box img {

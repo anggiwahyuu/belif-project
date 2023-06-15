@@ -6,7 +6,7 @@
                 <p>{{ teksTitle }}</p>
             </div>
 
-            <div class="d-flex justify-content-center py-5">
+            <div class="d-flex justify-content-center py-5 px-lg-5">
                 <div class="box text-center mx-3" @click="goToCommunity()">
                     <div class="circle rounded-circle"></div>
                     <h4 class="fs-5 fw-bold">Workshop Online</h4>
@@ -24,7 +24,7 @@
 
 <style scoped>
 .box {
-    width: 200px;
+    width: 300px;
     border: none;
     background: white;
     border-top-left-radius: 30px;

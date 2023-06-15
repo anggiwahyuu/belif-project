@@ -15,6 +15,9 @@
       "dom.iterable",
       "scripthost"
     ], 
-    "allowJs": true
+    "allowJs": true,
+    "types": [
+      "vue-sweetalert2"
+    ],
   }
 }

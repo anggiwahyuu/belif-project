@@ -7,7 +7,7 @@
 
         <div class="container">
             <div class="row">
-                <div class="col-lg-6 mb-3" v-for="item in konselors" :key="item.id">
+                <div class="col-lg-6 mb-3" v-for="item in konselors" :key="item.id" style="background: white;">
                     <div class="member d-flex align-items-start">
                         <div class="pic">
                             <img :src="item.image" class="img-fluid" alt="" loading="lazy">
@@ -19,8 +19,8 @@
                                 <li v-for="i in item.spesialis" :key="i.id">{{ i.ahli }}</li>
                             </ul>
                             <div class="button-collection">
-                                <router-link :to="{name: 'detail', params: {id: item.id}}" class="more-btn">Lihat Profil</router-link>
-                                <router-link :to="{name: 'daftar-online', params: {id: item.id}}" class="more-btn">Konsultasi</router-link>
+                                <router-link :to="{name: 'detail', params: {id: item.id}}" class="more-btn py-1 px-3">Lihat Profil</router-link>
+                                <router-link :to="{name: 'daftar-online', params: {id: item.id}}" class="more-btn py-1 px-3 mt-md-0 mt-3">Konsultasi</router-link>
                             </div>
                         </div>
                     </div>
@@ -34,7 +34,6 @@
 .more-btn {
   display: inline-block;
   background: #1977cc;
-  padding: 6px 30px 8px 30px;
   color: #fff;
   border: none;
   border-radius: 50px;
@@ -56,7 +55,7 @@ export default {
         konselors: [
           {
             id: 0,
-            nama: "Walter White", 
+            nama: "Jessica Maha Dewi", 
             image: require("@/assets/img/konselor/konselor2.jpg"), 
             posisi: "Chief Medical Officer", 
             spesialis: [
@@ -67,7 +66,7 @@ export default {
           },
           {
             id: 1,
-            nama: "Sarah Johnson", 
+            nama: "Siti Fathonah", 
             image: require("@/assets/img/konselor/konselor1.jpg"), 
             posisi: "Anesthesiologist", 
             spesialis: [
@@ -78,7 +77,7 @@ export default {
           },
           {
             id: 2,
-            nama: "William Anderson", 
+            nama: "Edi Handoko Setiawan", 
             image: require("@/assets/img/konselor/konselor3.jpg"), 
             posisi: "Cardiology", 
             spesialis: [
@@ -89,7 +88,7 @@ export default {
           },
           {
             id: 3,
-            nama: "Amanda Jepson", 
+            nama: "Farida Setyaningsih", 
             image: require("@/assets/img/konselor/konselor4.jpg"), 
             posisi: "Neurosurgeon", 
             spesialis: [

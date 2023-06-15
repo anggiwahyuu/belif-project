@@ -1,10 +1,10 @@
 <template>
     <section id="card">
-        <div class="container d-flex text-white">
-            <div class="left-content">
+        <div class="container d-lg-flex d-block text-white">
+            <div class="left-content d-lg-block d-flex justify-content-center">
                 <img src="../../assets/img/laptop.png" alt="Image Laptop" style="width: 90%;" loading="lazy">
             </div>
-            <div class="right-content d-flex flex-column justify-content-center">
+            <div class="right-content d-flex flex-column justify-content-center mt-lg-0 mt-4">
                 <h3 class="fw-bold mb-5 fs-2">Yuk, #JanganTakutBertanya tentang permasalahanmu dengan psikolog!</h3>
                 <div class="d-flex">
                     <img src="../../assets/img/logo-belif-removebg-preview.png" alt="Logo Belif" style="width: 60px; height: 60px;">
@@ -15,8 +15,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="mt-5">
-                    <router-link to="" class="more-btn" style="text-decoration: none;">Jadwalkan Sesi Konseling Online Pertamamu <i class="bx bx-chevron-right"></i></router-link>
+                <div class="mt-5 d-lg-block d-flex justify-content-center">
+                    <router-link to="/psikolog" class="more-btn" style="text-decoration: none;">Jadwalkan Sesi Konseling Online Pertamamu <i class="bx bx-chevron-right"></i></router-link>
                 </div>
             </div>
         </div>
@@ -29,11 +29,11 @@
 }
 
 .left-content {
-    width: 50%;
+    width: 100%;
 }
 
 .right-content {
-    width: 50%;
+    width: 100%;
 }
 
 .star {

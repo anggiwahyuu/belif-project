@@ -1,11 +1,11 @@
 <template>
     <div id="hero2">
-        <div class="container d-flex py-4">
+        <div class="container d-lg-flex py-4">
             <div class="left-hero d-flex flex-column justify-content-center">
-                <h2 class="fs-2">{{ textHero }}</h2>
+                <h2 class="fs-2 text-lg-start text-center mb-lg-0 mb-4">{{ textHero }}</h2>
             </div>
             <div class="right-hero d-flex justify-content-center">
-                <img src="@/assets/img/modul.png" alt="Image Hero" loading="lazy">
+                <img src="@/assets/img/modul.png" style="width: 100%;" alt="Image Hero" loading="lazy">
             </div>
         </div>
     </div>
@@ -13,11 +13,11 @@
 
 <style scoped>
 .left-hero {
-    width: 50%;
+    width: 100%;
 }
 
 .right-hero {
-    width: 50%;
+    width: 100%;
 }
 
 .more-btn:hover {
