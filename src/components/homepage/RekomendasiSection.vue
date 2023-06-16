@@ -250,7 +250,7 @@
             </div>
 
             <div class="left-content-2 disable" id="left-content-2">
-              <img src="@/assets/img/konsultasi.jpg" class="rounded-5" style="width: 100%;" alt="Image Konsultasi">
+              <img src="@/assets/img/gambar-mentoring-hasil-rekomendasi.jpg" class="rounded-5" style="width: 100%;" alt="Image Konsultasi">
             </div>
             <div class="right-content-2 disable" id="right-content-2">
               <p class="fs-5 fw-semibold">{{ textResult }}</p>

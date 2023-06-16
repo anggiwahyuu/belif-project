@@ -20,7 +20,7 @@
                                     <li><router-link to="/layanan/parenting" class="dropdown-item" style="text-decoration: none;">Konseling Orang Tua</router-link></li>
                                 </ul>
                             </li>
-                            <li><router-link to="/c" class="dropdown-item" style="text-decoration: none;">Kerja Sama</router-link></li>
+                            <li><router-link to="/layanan/kerjasama" class="dropdown-item" style="text-decoration: none;">Kerja Sama</router-link></li>
                         </ul>
                     </li>
                     <li><router-link class="nav-link" to="/literasi" style="text-decoration: none;">Literasi</router-link></li>

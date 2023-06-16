@@ -57,6 +57,15 @@ const routes = [
   },
 
   {
+    path: '/layanan/kerjasama',
+    name: 'kerja-sama',
+    component: () => import("../views/layanan/kerjasama/KerjaSamaView.vue"),
+    meta: {
+      title: "A Better Life With Belif | Kerja Sama"
+    }
+  },
+
+  {
     path: '/literasi',
     name: 'literasi',
     component: () => import("../views/LiterasiView.vue"),
@@ -117,7 +126,7 @@ const routes = [
     meta: {
       title: "Checkout"
     }
-  },
+  }
 ]
 
 const router = createRouter({
